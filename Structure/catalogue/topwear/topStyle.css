@@ -1,1 +1,30 @@
-
+.categories{
+ margin:70px 0px;
+}
+.rows{
+    display:flex;
+   
+    max-height:max-content;
+}
+.col-3{
+    flex: 33.33%;
+      padding: 10px;
+      margin-left: 40px;
+}
+img:hover{
+transform:translateY(-6px);
+}
+img {
+    float:none;
+    padding: auto;
+    height: 550px;
+    object-fit: cover;
+    transition: transform 0.5s;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+.checked ,.fa {
+    color: orange;
+  }
