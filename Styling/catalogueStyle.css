@@ -7,7 +7,7 @@
     max-height:max-content;
 }
 .col-3{
-    flex: 33.33%;
+      flex: 33.33%;
       padding: 10px;
       margin-left: 40px;
 }
@@ -28,3 +28,8 @@ img {
 .checked ,.fa {
     color: orange;
   }
+body{
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}

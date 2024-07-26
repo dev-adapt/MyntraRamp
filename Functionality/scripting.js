@@ -16,14 +16,14 @@ const exploreRamp = document.querySelector('.exploreRamp');
 const container_ele = document.querySelector('.container');
 var bodyele = document.getElementsByTagName("BODY");
 
-men_section.onmouseover = () => {
+men_section.onmouseenter = () => {
     men_section_items.classList.remove('visibility');
 }
-men_section.onmouseout = () => {
+men_section.onmouseleave = () => {
     men_section_items.classList.add('visibility');
 } /* men section ends here */
 
-women_section.onmouseover = () => {
+women_section.onmouseenter = () => {
     women_section_items.classList.remove('visibility');
 }
 women_section_items.onmouseleave = () => {
@@ -31,27 +31,27 @@ women_section_items.onmouseleave = () => {
 } /* women section ends here */
 
 
-kids_section.onmouseover = () => {
+kids_section.onmouseenter = () => {
     kids_section_items.classList.remove('visibility');
 }
-kids_section.onmouseout = () => {
+kids_section.onmouseleave = () => {
     kids_section_items.classList.add('visibility');
 } /* kids section ends here */
 
-home_section.onmouseover = () => {
+home_section.onmouseenter = () => {
     home_section_items.classList.remove('visibility');
 }
-home_section.onmouseout = () => {
+home_section.onmouseleave = () => {
     home_section_items.classList.add('visibility');
 } /* home and living ends here */
 
-beauty_section.onmouseover = () => {
+beauty_section.onmouseenter = () => {
     beauty_section_items.classList.remove('visibility');
 }
-beauty_section.onmouseout = () => {
+beauty_section.onmouseleave = () => {
     beauty_section_items.classList.add('visibility');
 }
-ramp_section.onmouseover = () => {
+ramp_section.onmouseenter = () => {
     ramp_section_items.classList.remove('visibility');
 }
 ramp_section_items.onmouseleave =() =>{

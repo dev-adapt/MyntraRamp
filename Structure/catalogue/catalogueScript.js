@@ -1,4 +1,4 @@
 function openPageTop() {
     // Redirect to another page
-    window.location.href = '../../ramp.html';
+    window.location.href = '../ramp.html';
   }
