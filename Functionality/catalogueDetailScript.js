@@ -13,3 +13,16 @@ SmallImg[2].onclick=function(){
 SmallImg[3].onclick=function(){
     ProductImg.src=SmallImg[3].src;
 }
+
+var clicked = false;
+
+function myWishlistFunction() {
+  clicked = !clicked;
+  const el = document.getElementById("wishlist-btn");
+  if (clicked) {
+    el.style.color = "white"
+  } else {
+    el.style.color = "#e92275"
+  }
+
+}

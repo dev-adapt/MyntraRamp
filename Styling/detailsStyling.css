@@ -49,18 +49,19 @@
 }
 .btn-cart{
     background-color: #e92275;
+    
     color: white;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
-    height: 200px;
-    width: 500px;
+    height: 80px;
+    width: 270px;
     margin-right: 30px;
     margin-top: 50px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .ramp-detail-btn{
     background-color:white;
@@ -85,4 +86,19 @@
    border-radius: 50%;
    cursor: pointer;
    border:1px solid salmon;
+}
+#wishlist-btn{
+    position: absolute;
+    color: white;
+    border-radius: 50%;
+    border:1.5px solid rgb(236, 203, 220);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 190px;
+    left:560px;
+    cursor: pointer;
+    font-size: 45px;
+    font-weight: bolder;
+    cursor: pointer;
 }

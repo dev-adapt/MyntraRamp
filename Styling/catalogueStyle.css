@@ -11,10 +11,10 @@
       padding: 10px;
       margin-left: 40px;
 }
-img:hover{
+.images-catalogue:hover{
 transform:translateY(-6px);
 }
-img {
+.images-catalogue {
     float:none;
     padding: auto;
     height: 550px;
