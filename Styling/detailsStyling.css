@@ -1,0 +1,28 @@
+.single-product{
+    margin-top: 80px;
+}
+.single-product .col-3 img{
+    padding: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size:22px;
+    font-weight: bold;
+}
+.single-product select{
+    display: block;
+    padding: 22px;
+    margin-top: 20px;
+}
+.fa-indent{
+    color:rgb(105, 104, 104);
+    margin-left: 20px;
+}
+.small-img-row{
+    display:flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
