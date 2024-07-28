@@ -26,3 +26,6 @@ function myWishlistFunction() {
   }
 
 }
+function openPage(){
+  window.location.href = "../ramp.html";
+}

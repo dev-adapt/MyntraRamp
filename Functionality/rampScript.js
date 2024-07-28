@@ -19,7 +19,7 @@ function showSlides() {
 }
 function openPage() {
     // Redirect to another page
-    window.location.href = 'theme.html';
+    window.location.href = './theme.html';
   }
 
 let slideIndex2 = 0;
