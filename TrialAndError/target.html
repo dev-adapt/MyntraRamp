@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Page</title>
+    <style>
+        .dropzone {
+            width: 250px;
+            height: 350px;
+            border: 1px dashed black;
+            margin: 10px;
+            display: inline-block;
+            position: relative;
+        }
+        .dropped-image, .default-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  /* Ensures the image covers the entire area */
+        }
+    </style>
+</head>
+<body>
+    <h1>Target Page</h1>
+    <div class="dropzone" id="zone1">
+        <img src="../Images/image.png" class="default-image" alt="Default Image">
+    </div>
+    <div class="dropzone" id="zone2">
+        <img src="../Images/image.png" class="default-image" alt="Default Image">
+    </div>
+
+        <img src="../Images/image.png" class="default-image" alt="Default Image">
+    </div>
+    <div class="dropzone" id="zone4">
+        <img src="../Images/image.png" class="default-image" alt="Default Image">
+    </div>
+    <div class="dropzone" id="zone5">
+        <img src="../Images/image.png" class="default-image" alt="Default Image">
+    </div>
+
+    <script>
+        function loadImages() {
+            const images = JSON.parse(localStorage.getItem('droppedImages')) || [];
+            const dropzones = document.querySelectorAll('.dropzone');
+            dropzones.forEach((zone, index) => {
+                const defaultImage = zone.querySelector('.default-image');
+                if (images[index]) {
+                    const img = document.createElement('img');
+                    img.src = images[index];
+                    img.className = 'dropped-image';
+                    if (defaultImage) {
+                        zone.removeChild(defaultImage);
+                    }
+                    zone.innerHTML = '';  // Clear the zone
+                    zone.appendChild(img);
+                } else if (!defaultImage) {
+                    const img = document.createElement('img');
+                    img.src = '../Images/image.png';
+                    img.className = 'default-image';
+                    zone.appendChild(img);
+                }
+            });
+        }
+
+        // Load images when the page loads
+        window.addEventListener('load', loadImages);
+
+        // Clear localStorage when the page is about to be unloaded
+        window.addEventListener('beforeunload', () => {
+            localStorage.removeItem('droppedImages');
+        });
+
+        // Optionally, handle a storage event if different tabs/windows are used.
+        window.addEventListener('storage', (event) => {
+            if (event.key === 'droppedImages') {
+                loadImages();
+            }
+        });
+    </script>
+</body>
+</html>
+

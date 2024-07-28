@@ -12,7 +12,24 @@
     <link rel="stylesheet" href="../../../../Styling/styling.css">
     <link rel="stylesheet" href="../../../../Styling/catalogueStyle.css">
     <link rel="stylesheet" href="../../../../Styling/detailsStyling.css">
-    
+    <style>
+                .draggable {
+        
+            border: 1px solid black;
+            margin: 10px;
+        }
+        #drop-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #drop-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
     <title>Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra</title>
 </head>
 <body>
@@ -979,21 +996,21 @@
                   </button>
             <!--HERE WE HAVE TO CREATE THE DRAG AND DROP FEATURE-->
 
-            <img src="../../../../catalogue1/top3.png" width="100%" id="product-image">
+            <img src="../../../../catalogue1/top3.png" class="draggable"  draggable="true"width="100%" id="product-image">
            
             </div>
             <div class="small-img-row">
                 <div class="small-img-col">
-                    <img class="images-catalogue small-product-image" src="../../../../catalogue1/top3.1.png" width="100%" >
+                    <img class="images-catalogue small-product-image" src="../../../../catalogue1/top3.1.png" class="draggable"  draggable="true"width="100%" >
                 </div>
                 <div class="small-img-col">
-                    <img class="images-catalogue small-product-image"src="../../../../catalogue1/top3.2.png" width="100%" >
+                    <img class="images-catalogue small-product-image"src="../../../../catalogue1/top3.2.png" class="draggable"  draggable="true"width="100%" >
                 </div>
                 <div class="small-img-col">
-                    <img class="images-catalogue small-product-image"src="../../../../catalogue1/top3.3.png" width="100%" >
+                    <img class="images-catalogue small-product-image"src="../../../../catalogue1/top3.3.png"class="draggable"  draggable="true" width="100%" >
                 </div>
                 <div class="small-img-col">
-                    <img class="images-catalogue small-product-image"src="../../../../catalogue1/top3.png" width="100%" >
+                    <img class="images-catalogue small-product-image"src="../../../../catalogue1/top3.png" class="draggable"  draggable="true"width="100%" >
                 </div>
             </div>
         </div>
@@ -1279,6 +1296,27 @@ Can be dry cleaned<br>
         </div>
 
     </footer>
+    <script>
+        const draggables = document.querySelectorAll('.draggable');
+
+        draggables.forEach(draggable => {
+            draggable.addEventListener('dragstart', (event) => {
+                event.dataTransfer.setData('text/plain', event.target.src);
+            });
+        });
+
+        document.body.addEventListener('drop', (event) => {
+            event.preventDefault();
+            const data = event.dataTransfer.getData('text/plain');
+            const images = JSON.parse(localStorage.getItem('droppedImages')) || [];
+            images.push(data);
+            localStorage.setItem('droppedImages', JSON.stringify(images));
+        });
+
+        document.body.addEventListener('dragover', (event) => {
+            event.preventDefault();
+        });
+    </script>
     <script src="../../../../Functionality/scripting.js"></script>
     <script src="../../../../Functionality/catalogueScript.js"></script>
     <script src="../../../../Functionality/catalogueDetailScript.js"></script>
