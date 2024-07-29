@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toggle Button Example - Page 1</title>
+    <title>Toggle Button Example - Competition Page</title>
     <style>
         body{
-            background-color: #4caf50;
+            background-color: rgb(103, 102, 102);
         }
         .toggle-container {
             display: flex;
@@ -17,42 +17,43 @@
             -webkit-appearance: none;
             width: 50px;
             height: 25px;
-            background-color: #ccc;
+            background-color: #4caf50;
             border-radius: 15px;
             position: relative;
             outline: none;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition:right background-color 0.3s;
         }
         .toggle-button::before {
-            content: 'Off';
+            content: 'On';
             position: absolute;
             top: 50%;
-            left: 5px;
-            transform: translateY(-50%);
+            right: 22px;
+            transform: translateX(70%);
             color: white;
             font-size: 14px;
         }
         .toggle-button:checked {
-            background-color: #4caf50;
+            background-color: #3ce1be;
         }
         .toggle-button:checked::before {
-            content: 'On';
-            left: 25px;
+            content: 'on';
+            left: 20px;
+            top: 5px;
         }
         .toggle-button::after {
             content: '';
             position: absolute;
             width: 20px;
             height: 20px;
-            background-color: white;
+            background-color: rgb(168, 168, 168);
             border-radius: 50%;
             top: 2.5px;
-            left: 2.5px;
+            left: 27.5px;
             transition: left 0.3s;
         }
         .toggle-button:checked::after {
-            left: 27.5px;
+            left: 2.5px;
         }
         .label {
             margin-left: 10px;
@@ -62,16 +63,18 @@
 </head>
 <body>
     <div class="toggle-container">
-        <input type="checkbox" id="toggle" class="toggle-button">
+        <input type="checkbox" id="toggle" class="toggle-button" checked>
         <label for="toggle" class="label">Competition Mode</label>
     </div>
 
     <script>
         document.getElementById('toggle').addEventListener('change', function() {
-            if (this.checked) {
-                window.location.href = 'try2.html';
+            if (!this.checked) {
+                window.location.href = 'try.html';
             }
         });
     </script>
 </body>
+</html>
+
 </html>

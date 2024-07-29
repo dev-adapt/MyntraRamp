@@ -97,3 +97,9 @@ beauty_section.onmouseover = () => {
 beauty_section.onmouseout = () => {
     beauty_section_items.classList.add('visibility');
 }
+document.getElementById('toggle').addEventListener('change', function() {
+  if (this.checked) {
+      window.location.href = '../Structure/index.html';
+  }
+  
+});
