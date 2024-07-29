@@ -6,18 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/png" href="../../../Images/favicon.png"/>
-    <link rel="stylesheet" href="../../../Styling/catalogueStyle.css">
+    <link rel="icon" type="image/png" href="../../../../Images/favicon.png"/>
+    <link rel="stylesheet" href="../../../../Styling/catalogueStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../../Styling/styling.css">
+    <link rel="stylesheet" href="../../../../Styling/styling.css">
+    <link rel="stylesheet" href="../../../../Styling/catalogueStyle.css">
+    <link rel="stylesheet" href="../../../../Styling/detailsStyling.css">
+    <style>
+                .draggable {
+        
+            border: 1px solid black;
+            margin: 10px;
+        }
+        #drop-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #drop-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
     <title>Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra</title>
 </head>
 <body>
-  
     <!--header starts here-->
     <nav><!--https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/logo.png-->
         <div class="left">
-            <img class="images-catalogue" src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/logo.png" alt="">
+            <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/logo.png" alt="">
             <ul>
                 <li class="men bar">Men</li>
                 <li class="women bar">Women</li>
@@ -962,130 +981,144 @@
 
     <div class="ramp-section-items visibility" style="height: fit-content;width: fit-content;"> <!--Myntra ramp-->  
     
-    <img class="rampimg "src="../../../Images/rampImage2.png" style="height:600px;width:500px;float:unset;">
-    <button class="btn " onclick="openPageTop()">Explore Ramp ></button>
+    <img class="rampimg "src="../../../../Images/rampImage2.png" style="height:600px;width:500px;float:unset;">
+    <button class="btn " onclick="openMain()">Explore Ramp ></button>
 </div>
-
- <div class="studio-section-items"></div>
 <!--header ends here-->
 
-<div class="categories">
-    <div class="rows">
-        <div class="col-3">
-            <img class="images-catalogue" src="../../../catalogue1/top1.png"/>
-            <h4>company name</h4>
-         <div class="rating"> 
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star-o"></span>
-            <span class="fa fa-star-o"></span>
-        </div> 
-            <p> 599.00</p>
-        </div>
-        <div class="col-3">
-          
-            <img class="images-catalogue" src="../../../catalogue1/top2.png"/>
-         
-            <h4>company name</h4>
-            <div class="rating"> 
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star-o"></span>
-                <span class="fa fa-star-o"></span>
-                </div> 
-                            <p> 599.00</p>
-                       
-        </div>
-        <div class="col-3"> <a href="./details/top1.html" target="_blank"> 
-            <img class="images-catalogue" src="../../../catalogue1/top3.png" /></a>
-            <h4>company name</h4>
-            <div class="rating"> 
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star-o"></span>
-                </div> 
-                            <p> 599.00</p>
-         
-        </div>
-        <div class="col-3">
-            <img class="images-catalogue" src="../../../catalogue1/top4.png"/>
-            <h4>company name</h4>
-            <div class="rating"> 
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star-o "></span>
-                <span class="fa fa-star-o"></span>
-                <span class="fa fa-star-o"></span>
-                </div> 
-                            <p> 599.00</p>
-       
-        </div>
-    </div>
+<!--single product details-->
+<div class="small-container single-product"><!--small-container-->
+    <div class="row"><!--row-->
+        <div class="col-3-left"><!--col-2-->
+            <div>
+                <button id="wishlist-btn" onclick="myWishlistFunction()">
+                    &#10084;
+                  </button>
+            <!--HERE WE HAVE TO CREATE THE DRAG AND DROP FEATURE-->
 
-    <div class="rows">
-        <div class="col-3">   <a href="./details/top2.html" target="_blank"> 
-            <img class="images-catalogue" src="../../../catalogue1/top5.png"/>
-        </a>
-            <h4>company name</h4>
-         <div class="rating"> 
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star-o"></span>
-            <span class="fa fa-star-o"></span>
-        </div> 
-            <p>&#8377 599.00</p>
-        </div>
-        <div class="col-3">
-            <img class="images-catalogue" src="../../../catalogue1/top6.png"/>
-            <h4>company name</h4>
-            <div class="rating"> 
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star-o"></span>
-                <span class="fa fa-star-o"></span>
-                </div> 
-                            <p>&#8377 599.00</p>
+            <img src="../../../../catalogue1/top5.png" class="draggable"  draggable="true"width="100%" id="product-image">
            
+            </div>
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img class="images-catalogue small-product-image" src="../../../../catalogue1/top5.1.png" class="draggable"  draggable="true"width="100%" >
+                </div>
+                <div class="small-img-col">
+                    <img class="images-catalogue small-product-image"src="../../../../catalogue1/top5.2.png" class="draggable"  draggable="true"width="100%" >
+                </div>
+                <div class="small-img-col">
+                    <img class="images-catalogue small-product-image"src="../../../../catalogue1/top5.3.png"class="draggable"  draggable="true" width="100%" >
+                </div>
+                <div class="small-img-col">
+                    <img class="images-catalogue small-product-image"src="../../../../catalogue1/top5.png" class="draggable"  draggable="true"width="100%" >
+                </div>
+            </div>
         </div>
-        <div class="col-3"> <a href="./details/top3.html" target="_blank"> 
-            <img class="images-catalogue" src="../../../catalogue1/top7.png"/></a>
-            <h4>company name</h4>
-            <div class="rating"> 
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star-o"></span>
-                </div> 
-                            <p>&#8377 599.00</p>
-         
+        <div class="col-3-right"><!--col-2-->
+           <p>Home/Clothing/Women/Western Wear/Top</p>
+           <h1>red printed tshirt</h1>
+           <h4> &#8377 1499.00</h4>
+           <div class="size-selection">select size</div>
+           <div class="size">
+            <div class="size-option">XS</div>
+            <div class="size-option">S</div>
+            <div class="size-option">M</div>
+            <div class="size-option">L</div>
+            <div class="size-option">XL</div>
+           </div>
+          
+        <div class="adding-options">
+            <button class="btn-cart cart" >ADD TO CART</button>
+            <button  class="btn-cart ramp-detail-btn" onclick="openMain()">ADD ON RAMP</button>
         </div>
-        <div class="col-3">
-            <img class="images-catalogue" src="../../../catalogue1/top8.png"/>
-            <h4>company name</h4>
-            <div class="rating"> 
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star-o "></span>
-                <span class="fa fa-star-o"></span>
-                <span class="fa fa-star-o"></span>
-                </div> 
-                            <p>&#8377 599.00</p>
-       
+          <div style="margin-top: 50px;">
+            <h3>Product Details   <i class="fa fa-indent"></i></h3>
+           <p>
+            <br>
+            Fitted, sleeveless top in soft, stretch jersey with a square neckline. Partly lined
+           </p>
+           <h3>Material Care</h3>
+           <p>
+            85% Polyamide, 15% Elastane<br>
+Machine Wash <br>
+Line dry<br>
+Only non-chlorine bleach when needed  <br>
+Machine wash at 40deg<br>
+Medium iron<br>
+Can be dry cleaned<br>
+           </p>
+          </div> 
+           
         </div>
     </div>
 </div>
 
+<!-------title------>
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+    </div>
+</div>
 
+<!-------products------>
 
-
-<!--footer starts here--> 
+<div class="small-container">
+<div class="rows">
+    <div class="col-3">
+        <img class="images-catalogue" src="../../../../catalogue1/top1.png"/>
+        <h4>company name</h4>
+     <div class="rating"> 
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star-o"></span>
+        <span class="fa fa-star-o"></span>
+    </div> 
+        <p> 599.00</p>
+    </div>
+    <div class="col-3">
+        <img class="images-catalogue"src="../../../../catalogue1/top2.png"/>
+        <h4>company name</h4>
+        <div class="rating"> 
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star-o"></span>
+            <span class="fa fa-star-o"></span>
+            </div> 
+                        <p> 599.00</p>
+       
+    </div>
+    <div class="col-3">
+        <img class="images-catalogue"src="../../../../catalogue1/top3.png"/>
+        <h4>company name</h4>
+        <div class="rating"> 
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star-o"></span>
+            </div> 
+                        <p> 599.00</p>
+     
+    </div>
+    <div class="col-3">
+        <img class="images-catalogue"src="../../../../catalogue1/top4.png"/>
+        <h4>company name</h4>
+        <div class="rating"> 
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star-o "></span>
+            <span class="fa fa-star-o"></span>
+            <span class="fa fa-star-o"></span>
+            </div> 
+                        <p> 599.00</p>
+   
+    </div>
+</div>
+</div>
+ <!--footer starts here--> 
     <footer>
         <div class="footer-container">
             <div class="row">
@@ -1152,10 +1185,10 @@
                     <span class="content-heading">EXPERINCE MYNTRA APP ON MOBILE</span>
                     <div class="download-button">
                         <div class="Google-play">
-                            <img class="images-catalogue" src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/google-play.png" alt="google play">
+                            <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/google-play.png" alt="google play">
                         </div>
                         <div class="App-Store">
-                            <img class="images-catalogue" src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/app-store.png" alt="app store">
+                            <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/app-store.png" alt="app store">
                         </div>
                     </div>
                     <br>
@@ -1264,10 +1297,31 @@
 
     </footer>
     <script>
+       function openMain(){
+            window.location.href="../../../ramp.html";
+        };
+        const draggables = document.querySelectorAll('.draggable');
 
+        draggables.forEach(draggable => {
+            draggable.addEventListener('dragstart', (event) => {
+                event.dataTransfer.setData('text/plain', event.target.src);
+            });
+        });
+
+        document.body.addEventListener('drop', (event) => {
+            event.preventDefault();
+            const data = event.dataTransfer.getData('text/plain');
+            const images = JSON.parse(localStorage.getItem('droppedImages')) || [];
+            images.push(data);
+            localStorage.setItem('droppedImages', JSON.stringify(images));
+        });
+
+        document.body.addEventListener('dragover', (event) => {
+            event.preventDefault();
+        });
     </script>
-    <script src="../../../Functionality/catalogueScript.js"></script>
-    <script src="../../../Functionality/scripting.js"></script>
-   
+    <script src="../../../../Functionality/scripting.js"></script>
+    <script src="../../../../Functionality/catalogueScript.js"></script>
+    <script src="../../../../Functionality/catalogueDetailScript.js"></script>
 </body>
 </html>

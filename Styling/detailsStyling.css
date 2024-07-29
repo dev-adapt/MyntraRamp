@@ -68,7 +68,11 @@
     color: #e92275;
     border: 1.5px solid #e92275;
 }
-
+.ramp-detail-btn:hover{
+    color:white;
+    background-color: #e92275;
+    border: 1.5px solid #ffffff;
+}
 .size-selection{
     font-size: 25px;
     font-weight: bold;
@@ -87,6 +91,10 @@
    cursor: pointer;
    border:1px solid salmon;
 }
+.size-option:hover{
+    border:1px solid gray;
+    color: rgb(250, 130, 18);
+}
 #wishlist-btn{
     position: absolute;
     color: white;
@@ -101,4 +109,7 @@
     font-size: 45px;
     font-weight: bolder;
     cursor: pointer;
+}
+#wishlist-btn:hover{
+    border:1.5px solid rgb(218, 64, 144);
 }
