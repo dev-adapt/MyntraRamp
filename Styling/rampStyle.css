@@ -586,7 +586,7 @@
     right: 75px;
 }
 .toggle-button::after {
-    content: 'on';
+    content: '';
     position: absolute;
     width: 20px;
     height: 20px;

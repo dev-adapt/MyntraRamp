@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" href="../Images/favicon.png" />
     <link rel="stylesheet" href="../Styling/rampStyle.css">
     <link rel="stylesheet" href="../Styling/styling.css">
+    <link rel="stylesheet" href="../Styling/competitionStyle.css">
     <style>
         .dropped-image, .default-image {
            object-fit: cover;  /* Ensures the image covers the entire area */
@@ -967,49 +968,67 @@
     <div class="slideshow-container">
 
         <div class="mySlides fade">
-            <div class="numbertext">1 / 8</div>
-            <img src="  ../Images/slide1.png" style="width:100%">
-            <div class="text"></div>
+            <div class="numbertext"> </div>
+            <img src="../Images/Untitled-1.png" style="width:100%">
+            <div  class="count-btn">  <span id="display">0</span> <button class="wish"id="wishlist-btn"  >
+                &#10084;
+              </button></div>
+          
         </div>
 
         <div class="mySlides fade">
-            <div class="numbertext">2 / 8</div>
-            <img src="  ../Images/slide2.png" style="width:100%">
-            <div class="text"></div>
+            <div class="numbertext"> </div>
+            <img src=" ../Images/Untitled-3.png" style="width:100%">
+            <div  class="count-btn"> <span id="display2">0</span><button class="wish"id="wishlist-btn2"  >
+                &#10084;
+              </button></div>
+           
         </div>
 
         <div class="mySlides fade">
-            <div class="numbertext">3 / 8</div>
-            <img src="  ../Images/slide3.png" style="width:100%">
-            <div class="text"></div>
+            <div class="numbertext"> </div>
+            <img src="  ../Images/Untitled-2.png" style="width:100%">
+            <div  class="count-btn"> <span id="display3">0</span> <button class="wish"id="wishlist-btn3"  >
+                &#10084;
+              </button></div>
         </div>
         <div class="mySlides fade">
-            <div class="numbertext">4 / 8</div>
-            <img src="  ../Images/slide4.png" style="width:100%">
-            <div class="text"></div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">5 / 8</div>
-            <img src="  ../Images/slide5.png" style="width:100%">
-            <div class="text"></div>
+            <div class="numbertext"> </div>
+            <img src="../Images/Untitled-4.png" style="width:100%">
+            <div  class="count-btn"> <span id="display4">0</span> <button class="wish"id="wishlist-btn4"  >
+                &#10084;
+              </button></div>
         </div>
 
         <div class="mySlides fade">
-            <div class="numbertext">6 / 8</div>
-            <img src="  ../Images/slide6.png" style="width:100%">
-            <div class="text"></div>
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext">7 / 8</div>
-            <img src="  ../Images/slide7.png" style="width:100%">
-            <div class="text"></div>
+            <div class="numbertext"></div>
+            <img src=" ../Images/Untitled-1.png" style="width:100%">
+            <div  class="count-btn"> <span id="display5">0</span> <button class="wish"id="wishlist-btn5"  >
+                &#10084;
+              </button></div>
         </div>
 
         <div class="mySlides fade">
-            <div class="numbertext">8 / 8</div>
-            <img src="  ../Images/slide8.png" style="width:100%">
-            <div class="text"></div>
+            <div class="numbertext"></div>
+            <img src="../Images/Untitled-4.png" style="width:100%">
+            <div  class="count-btn"> <span id="display6">0</span> <button class="wish"id="wishlist-btn6"  >
+                &#10084;
+              </button></div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="../Images/Untitled-3.png" style="width:100%">
+            <div  class="count-btn">  <span id="display7">0</span><button class="wish"id="wishlist-btn7"  >
+                &#10084;
+              </button></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src=" ../Images/Untitled-2.png" style="width:100%">
+            <div  class="count-btn"> <span id="display8">0</span> <button class="wish"id="wishlist-btn8"  >
+                &#10084;
+              </button></div>
         </div>
     </div>
 
@@ -1024,11 +1043,9 @@
         <span class="dot"></span>
         <span class="dot"></span>
     </div>
-    <div class="time"> Myntra Ramp coming soon till then stay tuned
-        <button class="theme" onclick="openPage()" style="vertical-align:middle"><span>Check Theme</span></button>
-    </div>
+
  <div class="lookcurated">
-        <h2>Summer Mood Board</h2>
+        <h2>Board Is Live</h2>
         <div class="image-container">
             <div class="dropzone" id="zone1">
                 <img src="../Images/image.png" alt="Summer Top" id="inclined-image1" class="default-image">
@@ -1047,12 +1064,18 @@
 
             </div>
         </div>
-
         <div class="toggle-container">
-            <label for="toggle" class="label">Competition Mode</label>
+            <label for="toggle" class="label">Normal Mode</label>
             <input type="checkbox" id="toggle" class="toggle-button">
              </div>
       
+<div class="timer">
+    <p id="demo"></p>
+</div>
+<div>
+    <button id ="buttonSubmit"type="button" onclick="lock()"><span  id="submit-btn">lock the look</span> </button>
+    
+</div>
         <!--work ends here dont touch anything after this-->
         <div class="vision">
             <img class="visionImg" src="  ../Images/rampImage.jpg">
@@ -1065,37 +1088,6 @@
                 live , it functions as a style board to coordinate outfits effectively. <br>Join Myntra Ramp and move
                 beyond wishlisting to actively styling your choices. </div>
         </div>
-
-        <div class="winners">Previous Ramp Winners Instagram
-            <div class="slideshow-container2">
-
-                <div class="mySlides2 fade2">
-                    <div class="numbertext"></div>
-                    <img src="  ../Images/ss1.png" style="width:100%">
-                    <div class="text"></div>
-                </div>
-
-                <div class="mySlides2 fade2">
-                    <div class="numbertext"></div>
-                    <img src="  ../Images/ss2.png" style="width:100%">
-                    <div class="text"></div>
-                </div>
-
-                <div class="mySlides2 fade2">
-                    <div class="numbertext"></div>
-                    <img src="  ../Images/ss3.png" style="width:100%">
-                    <div class="text"></div>
-                </div>
-
-            </div>
-
-            <div style="text-align:center">
-                <span class="dot2"></span>
-                <span class="dot2"></span>
-                <span class="dot2"></span>
-            </div>
-        </div>
-
 
         <footer>
             <div class="footer-container">
@@ -1360,6 +1352,7 @@
             });
         </script>
         <script src="../Functionality/rampScript.js"></script>
+        <script src="../Functionality/competitionScript.js"></script>
 </body>
 
 </html>

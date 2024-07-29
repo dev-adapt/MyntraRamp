@@ -1,0 +1,51 @@
+#buttonSubmit{
+    background-color: #ea2674;
+    color: aliceblue;
+    border: 0px;
+    font-size: 28px;
+    width: 
+    250px;
+    height: 60px;
+}
+.wish{
+    color: white;
+    border-radius: 50%;
+    border:1.5px solid rgb(236, 203, 220);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 190px;
+    left:560px;
+    cursor: pointer;
+    font-size: 45px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.wish:hover{
+    color: #ea2674;
+    border:1.5px solid rgb(218, 64, 144);
+}
+#wishlist-btn.clicked{
+    color: #ea2674;
+}
+#wishlist-btn2.clicked{
+    color: #ea2674;
+}
+#wishlist-btn3.clicked{
+    color: #ea2674;
+}
+#wishlist-btn4.clicked{
+    color: #ea2674;
+}
+#wishlist-btn5.clicked{
+    color: #ea2674;
+}
+#wishlist-btn6.clicked{
+    color: #ea2674;
+}
+#wishlist-btn7.clicked{
+    color: #ea2674;
+}
+#wishlist-btn8.clicked{
+    color: #ea2674;
+}
