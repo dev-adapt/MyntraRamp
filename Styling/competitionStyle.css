@@ -114,3 +114,16 @@
   .dropdown:hover .dropdown-content {display: block;}
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
+  #message{
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 20px;
+    position: relative;
+    left: 1200px;
+  
+    color: rgb(92, 17, 48);
+    height: 40px;
+    width:240px;
+    padding-top:2px;
+    text-align: center;
+  }
