@@ -1,0 +1,127 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+ 
+}
+
+
+.about-us {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+   padding: 90px 0; 
+  background-color: rgb(248, 206, 241);
+  background-image:url(bgimage15.jpg);
+  background-size: cover;
+}
+ 
+body{
+    background-color: rgb(248, 206, 241);
+    background-image:url(bgimage15.jpg);
+}
+
+.pic {
+  height: 700px;
+  width: 500px;
+ 
+}
+
+.about {
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text {
+  width: 540px;
+}
+
+.text h2 {
+  color: #333;
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.text h5 {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+span {
+  color: #4070f4;
+}
+
+.text p {
+  color: whitesmoke;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.data {
+  margin-top: 30px;
+}
+
+ /* .hire {
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+} 
+
+ .hire:hover {
+  background: #000;
+}  */
+
+.mybox1 { 
+	display: none; 
+    color:black;
+} 
+
+button { 
+	padding: 10px; 
+	font-size: 20px; 
+	font-weight: 700; 
+	color: rgb(5, 14, 5); 
+	border: none; 
+	border-radius: 30px; 
+	background-color: rgb(182, 215, 182); 
+	margin-top: 20px; 
+} 
+.mybox{
+    color:black;
+}
+.guidelinesforComp{
+    width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+      color: black;
+      text-align: left;
+font-size:medium;
+      text-decoration: none;
+      font-family: "Poppins", sans-serif;
+  }
+  .declare{
+    text-align: center;
+    font-size: 30px;
+
+  }
+p{
+    text-decoration: solid;
+}

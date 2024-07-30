@@ -9,11 +9,24 @@
             background-color: rgb(233, 170, 201);
             color: rgb(125, 141, 153);
             text-align: center;
-            text-decoration: underline;
+           
             
         }
         .text{
             font-size: 30px;
+        }
+        h1{
+            text-decoration: underline;
+        }
+        .guidelinesforComp{
+          width: 65%;
+         margin-left: auto;
+         margin-right: auto;
+            background-color: rgb(237, 212, 227);
+            color: black;
+            text-align: left;
+
+            text-decoration: none;
         }
     </style>
     <title>Season theme</title>
@@ -23,24 +36,32 @@
     <h1>CURRENTLY RUNNING THEME</h1>
    
         <p>
-            <img alt="" src="monsoon.png" 
+            <img alt="" src="../Images/monsoon.png" 
                 style="height: 685px; width: 1198px" id="imgClickAndChange" onclick="changeImage()">
         </p>
-        <p>
-            
-        </p>
+      <div class="guidelinesforComp">
+           <p>Guidelines for the Competition</p>
+           <ul>
+            <li>design the whole look according to the theme</li>
+            <li>For any look to be eligible it has to have one topwear, bottomwear, 2-3 accessories, footwear</li>
+            <li>Randomly selected boards will get reflected throughout the day</li>
+            <li>More the upvoting on these randomly selected boards more is your chance to win</li>
+            <li>There will be winners for each day till the Competition is live and the most upvoted ones will win</li>
+            <li>You can also shop from the looks that others created and go to their profiles and check there other looks too from the previous competitions</li>
+        </ul> 
+      </div>
      
     
     <script>
 function changeImage() {
     var image = document.getElementById('imgClickAndChange');
     if (image.src.match("monsoon.png")) {
-        image.src = "monsoonBlur.png"; // Change to your second image path
+        image.src = "../Images/monsoonBlur.png"; // Change to your second image path
     } else {
-        image.src = "monsoon.png"; // Change to your first image path
+        image.src = "../Images/monsoon.png"; // Change to your first image path
     }
 }
-            </script>
+</script>
 </body>
 
 </html>
