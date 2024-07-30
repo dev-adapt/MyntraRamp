@@ -6,12 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/png" href="../Images/favicon.png"/>
-
-    <link rel="stylesheet" href="../Styling/styling.css">
+    <link rel="icon" type="image/png" href="../../../../Images/favicon.png"/>
+    <link rel="stylesheet" href="../../../../Styling/catalogueStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../../Styling/styling.css">
+    <link rel="stylesheet" href="../../../../Styling/catalogueStyle.css">
+    <link rel="stylesheet" href="../../../../Styling/detailsStyling.css">
+    <style>
+                .draggable {
+        
+            border: 1px solid black;
+            margin: 10px;
+        }
+        #drop-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #drop-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
     <title>Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra</title>
 </head>
 <body>
+    <!--header starts here-->
     <nav><!--https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/logo.png-->
         <div class="left">
             <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/logo.png" alt="">
@@ -222,7 +244,7 @@
         </div>
 
     </div>
-   <!--<div class="women-section-items visibility"> 
+    <div class="women-section-items visibility"> <!--women-->
         <div class="col-1">
             <div class="category">
                 <span class="category-heading">Indian & Fusion Wear</span>
@@ -375,182 +397,6 @@
                 <span class="category-heading">Jewellery</span>
                 <div class="category-items">
                     Fashion Jewellery
-                    <br>
-                    Fine Jewellery
-                    <br>
-                    Earrings
-                    <br>
-                </div>
-                <hr class="horizontal-line2">
-            </div>
-            <div class="category">
-                <span class="category-heading">Backpacks</span>
-            </div>
-            <div class="category">
-                <span class="category-heading">Handbags, Bags & Wallets</span>
-            </div>
-            <div class="category">
-                <span class="category-heading">Luggages & Troolleys</span>
-            </div>
-        </div>
-    </div>-->
-    <div class="women-section-items visibility"> <!--women-->
-        <div class="col-1">
-            <div class="category">
-                <span class="category-heading">Indian & Fusion Wear</span>
-                <div class="category-items">
-                    Kurtas&Suits
-                    <br>
-                    Kurtis, Tunics & Tops
-                    <br>
-                    Sarees
-                    <br>
-                    Ethnic Wear
-                    <br>
-                    Leggings, Salwars & Churidars
-                    <br>
-                    Skirts & Palazzos
-                    <br>
-                    Dress Materials
-                    <br>
-                    Lehenga Cholis
-                    <br>
-                    Dupattas & Shawls
-                    <br>
-                    Jackets
-                    <br>
-                </div>
-                <hr class="horizontal-line2">
-            </div>
-            <div class="category">
-                <span class="category-heading ">Belts, Scarves & More</span>
-                <br>
-                <a href="../Structure/catalogue/beltsAndScarfs/belt.html" target="_blank">belts </a>
-            </div>
-            <div class="category">
-                <span class="category-heading">Watches & Wearables</span>
-                <br>
-                <a href="../Structure/catalogue/watchesAndWearables/watches.html" target="_blank">watches </a>
-            </div>
-        </div>
-        <div class="col-2">
-            <div class="category">
-                <span class="category-heading">Western Wear</span>
-                <div class="category-items">
-                    Dresses
-                    <br>
-                   <a href="../Structure/catalogue/topwear/top.html" target="_blank"> Tops </a>
-                    <br>
-                    Tshirts
-                    <br>
-                    Jeans
-                    <br>
-                    Trousers & Capris
-                    <br>
-                    <a href="../Structure/catalogue/bottomwear/bottomwear.html" target="_blank"> Skirts and Shorts </a>
-                    <br>
-                    Co-ords
-                    <br>
-                    Playsuits
-                    <br>
-                    Jumpsuits
-                    <br>
-                    Shrugs
-                    <br>
-                    Sweaters & Sweatshirts
-                    <br>
-                    Jackets & Coats
-                    <br>
-                    Blazers & Waistcoats
-                    <br>
-                </div>
-                <hr class="horizontal-line2">
-            </div>
-            <div class="category">
-                <span class="category-heading">Plus Size</span>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="category">
-                <span class="category-heading">Maternity</span>
-            </div>
-            <div class="category">
-                <span class="category-heading">Sunglasses & Frames</span>
-            </div>
-            <div class="category">
-                <span class="category-heading">Footwear</span>
-                <div class="category-items">
-                    Flats
-                    <br>
-                    <a href="../Structure/catalogue/shoes/shoes.html" target="_blank"> casual shoes </a>
-                    <br>
-                    Heels
-                    <br>
-                    Boots
-                    <br>
-                    Sports Shoes & Floaters
-                    <br>
-                </div>
-                <hr class="horizontal-line2">
-            </div>
-            <div class="category">
-                <span class="category-heading">Sports & Active Wear</span>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="category">
-                <span class="category-heading">Lingerie & Sleepwear</span>
-                <div class="category-items">
-                    Bra
-                    <br>
-                    Briefs
-                    <br>
-                    Shapewear
-                    <br>
-                    Sleepwear & Loungewear
-                    <br>
-                    Swimwear
-                    <br>
-                    Camisoles & Thermals
-                    <br>
-                </div>
-                <hr class="horizontal-line2">
-            </div>
-            <div class="category">
-                <span class="category-heading">Beauty & Personal Care</span>
-                <div class="category-items">
-                    Makeup
-                    <br>
-                    Skincare
-                    <br>
-                    Premium Beauty
-                    <br>
-                    Lipsticks
-                    <br>
-                    Fragrances
-                    <br>
-                </div>
-            </div>
-        </div>
-        <div class="col-5">
-            <div class="category">
-                <span class="category-heading">Gadgets</span>
-                <div class="category-items">
-                    Smart Wearables
-                    <br>
-                    Fitness Gadgets
-                    <br>
-                    Headphones
-                    <br>
-                    Speakers
-                    <br>
-                </div>
-                <hr class="horizontal-line2">
-            </div>
-            <div class="category">
-                <span class="category-heading">Jewellery</span>
-                <div class="category-items">
-                    <a href="../Structure/catalogue/topwear/top.html" target="_blank"> Fashion Jewellery </a>
                     <br>
                     Fine Jewellery
                     <br>
@@ -1135,60 +981,144 @@
 
     <div class="ramp-section-items visibility" style="height: fit-content;width: fit-content;"> <!--Myntra ramp-->  
     
-    <img class="rampimg "src="../Images/rampImage2.png" style="height:600px;width:500px;float:unset;">
-    <button class="btn " onclick="openPage()">Explore Ramp ></button>
+    <img class="rampimg "src="../../../../Images/rampImage2.png" style="height:600px;width:500px;float:unset;">
+    <button class="btn " onclick="openMain()">Explore Ramp ></button>
+</div>
+<!--header ends here-->
+
+<!--single product details-->
+<div class="small-container single-product"><!--small-container-->
+    <div class="row"><!--row-->
+        <div class="col-3-left"><!--col-2-->
+            <div>
+                <button id="wishlist-btn" onclick="myWishlistFunction()">
+                    &#10084;
+                  </button>
+            <!--HERE WE HAVE TO CREATE THE DRAG AND DROP FEATURE-->
+
+            <img src="../../../../catalogue2/foot7a.png" class="draggable"  draggable="true"width="100%" id="product-image">
+           
+            </div>
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img class="images-catalogue small-product-image" src="../../../../catalogue2/foot7b.png" class="draggable"  draggable="true"width="100%" >
+                </div>
+                <div class="small-img-col">
+                    <img class="images-catalogue small-product-image"src="../../../../catalogue2/foot7a.png" class="draggable"  draggable="true"width="100%" >
+                </div>
+                <div class="small-img-col">
+                    <img class="images-catalogue small-product-image"src="../../../../catalogue2/foot7c.png"class="draggable"  draggable="true" width="100%" >
+                </div>
+                <div class="small-img-col">
+                    <img class="images-catalogue small-product-image"src="../../../../catalogue2/foot7a.png" class="draggable"  draggable="true"width="100%" >
+                </div>
+            </div>
+        </div>
+        <div class="col-3-right"><!--col-2-->
+           <p>Home/Clothing/Women/Western Wear/Top</p>
+           <h1>red printed tshirt</h1>
+           <h4> &#8377 1499.00</h4>
+           <div class="size-selection">select size</div>
+           <div class="size">
+            <div class="size-option">XS</div>
+            <div class="size-option">S</div>
+            <div class="size-option">M</div>
+            <div class="size-option">L</div>
+            <div class="size-option">XL</div>
+           </div>
+          
+        <div class="adding-options">
+            <button class="btn-cart cart" >ADD TO CART</button>
+            <button  class="btn-cart ramp-detail-btn" onclick="openMain()">ADD ON RAMP</button>
+        </div>
+          <div style="margin-top: 50px;">
+            <h3>Product Details   <i class="fa fa-indent"></i></h3>
+           <p>
+            <br>
+            Fitted, sleeveless top in soft, stretch jersey with a square neckline. Partly lined
+           </p>
+           <h3>Material Care</h3>
+           <p>
+            85% Polyamide, 15% Elastane<br>
+Machine Wash <br>
+Line dry<br>
+Only non-chlorine bleach when needed  <br>
+Machine wash at 40deg<br>
+Medium iron<br>
+Can be dry cleaned<br>
+           </p>
+          </div> 
+           
+        </div>
+    </div>
 </div>
 
-    <div class="studio-section-items"></div>
+<!-------title------>
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+    </div>
+</div>
 
-    <div class="container">
-        <img src="../Images/backDrop.png" alt="">
+<!-------products------>
+
+<div class="small-container">
+<div class="rows">
+    <div class="col-3">
+        <img class="images-catalogue" src="../../../../catalogue2/foot7a.png"/>
+        <h4>company name</h4>
+     <div class="rating"> 
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star-o"></span>
+        <span class="fa fa-star-o"></span>
+    </div> 
+        <p> 599.00</p>
     </div>
-    <div class="section">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic1.webp" alt="">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic2.webp" alt="">
+    <div class="col-3">
+        <img class="images-catalogue"src="../../../../catalogue2/foot8a.png"/>
+        <h4>company name</h4>
+        <div class="rating"> 
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star-o"></span>
+            <span class="fa fa-star-o"></span>
+            </div> 
+                        <p> 599.00</p>
+       
     </div>
-    <div class="section1">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic3.webp" alt="">
+    <div class="col-3">
+        <img class="images-catalogue"src="../../../../catalogue2/foot9a.png"/>
+        <h4>company name</h4>
+        <div class="rating"> 
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star-o"></span>
+            </div> 
+                        <p> 599.00</p>
+     
     </div>
-    <div class="section2">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic4.webp" alt="">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic6.webp" alt="">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic7.webp" alt="">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic8.webp" alt="">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic9.webp" alt="">
+    <div class="col-3">
+        <img class="images-catalogue"src="../../../../catalogue2/foot2c.png"/>
+        <h4>company name</h4>
+        <div class="rating"> 
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star-o "></span>
+            <span class="fa fa-star-o"></span>
+            <span class="fa fa-star-o"></span>
+            </div> 
+                        <p> 599.00</p>
+   
     </div>
-    <div class="section3">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic5.webp" alt="">
-    </div>
-    <div class="section4">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic10.webp" alt="">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic11.webp" alt="">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic12.webp" alt="">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic13.jpg" alt="">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic14.webp" alt="">
-    </div>
-    <div class="section5">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic15.webp" alt="">
-    </div>
-    <div class="section6">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic16.webp" alt="">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic17.webp" alt="">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic18.webp" alt="">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic19.webp" alt="">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic20.webp" alt="">
-    </div>
-    <div class="section7">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic21.webp" alt="">
-    </div>
-    <div class="section8">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic22.webp" alt="">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic23.webp" alt="">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic24.webp" alt="">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic25.webp" alt="">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic26.webp" alt="">
-        <img src="https://raw.githubusercontent.com/ZeroOctave/ZeroOctave-Javascript-Projects/main/assets/Images/myntraclone/pic27.jpg" alt="">
-    </div>
+</div>
+</div>
+ <!--footer starts here--> 
     <footer>
         <div class="footer-container">
             <div class="row">
@@ -1366,6 +1296,32 @@
         </div>
 
     </footer>
-    <script src="../Functionality/scripting.js"></script>
+    <script>
+       function openMain(){
+            window.location.href="../../../ramp.html";
+        };
+        const draggables = document.querySelectorAll('.draggable');
+
+        draggables.forEach(draggable => {
+            draggable.addEventListener('dragstart', (event) => {
+                event.dataTransfer.setData('text/plain', event.target.src);
+            });
+        });
+
+        document.body.addEventListener('drop', (event) => {
+            event.preventDefault();
+            const data = event.dataTransfer.getData('text/plain');
+            const images = JSON.parse(localStorage.getItem('droppedImages')) || [];
+            images.push(data);
+            localStorage.setItem('droppedImages', JSON.stringify(images));
+        });
+
+        document.body.addEventListener('dragover', (event) => {
+            event.preventDefault();
+        });
+    </script>
+    <script src="../../../../Functionality/scripting.js"></script>
+    <script src="../../../../Functionality/catalogueScript.js"></script>
+    <script src="../../../../Functionality/catalogueDetailScript.js"></script>
 </body>
 </html>
